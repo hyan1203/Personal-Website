@@ -1,0 +1,333 @@
+@import url(bootstrap.min.css);
+@import url(bootstrap-theme.min.css);
+/*
+Google WebFont's imports
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Habibi);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/OpenSans-Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(../fonts/UbuntuMono-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Habibi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Habibi'), local('Habibi-Regular'), url(../fonts/Habibi-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(../fonts/Roboto-Thin.woff) format('woff');
+}
+
+/*!
+  Ionicons, v1.4.1
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+  
+  This is a subset of Ionicons, only uses what is needed.
+*/
+@font-face {
+    font-family: "Ionicons";
+    src: url("../fonts/ionicons.eot?v=1.4.1");
+    src: url("../fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), 
+         url("../fonts/ionicons.ttf?v=1.4.1") format("truetype"), 
+         url("../fonts/ionicons.woff?v=1.4.1") format("woff"), 
+         url("../fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg"); font-weight: normal; font-style: normal; 
+}
+
+[class*="ion-"] {
+    font-family: 'Ionicons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* used in header contact */
+.ion-ios7-email-outline:before { content: "\f186"; }
+.ion-social-facebook-outline:before { content: "\f230"; }
+.ion-social-github-outline:before { content: "\f232"; }
+.ion-social-googleplus-outline:before { content: "\f234"; }
+.ion-social-linkedin-outline:before { content: "\f238"; }
+.ion-social-rss-outline:before { content: "\f23c"; }
+
+/* used in activity table*/
+.ion-social-github:before { content: "\f233"; }
+.ion-social-rss:before { content: "\f23d"; }
+
+/* used on resume */
+.ion-chatbubble-working:before { content: "\f11d"; }
+.ion-document-text:before { content: "\f12e"; }
+.ion-android-book:before { content: "\f2d0"; }
+
+
+/* 
+Responsive Design Reasoning
+more at: http://blog.geekwagon.net/linktothepostaboutresponsivestuffIhaven'tmadeyet
+
+break points
+300px - mobile devices are usually 1080px width / device pixel ratio of 3 = 360, anyone perusing the web at less than 300px, I'm not worried about you.
+625px - Chrome using half of a 4:3 screen at a resolution 1280x1024.
+944px - Chrome using half of a 16:9 screen at a resolution 1920x1800.
+    
+*/
+
+
+/** Global **/
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+body{
+    background: url("../images/rainbowsky.png") fixed;
+    background-size: cover;
+}
+
+#wrap {
+      background: #000014;
+      border-left: 1px solid #242424;
+      border-right: 1px solid #242424;
+      box-shadow: 0px 0px 6px 10px rgba(0, 0, 0, 0.18);
+      padding: 3em 0 0 0;
+      min-height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      width: 80vw;
+    }
+
+header {
+    background: #000014;
+    margin: 0 auto;
+    padding: 0;
+    height: 7em;
+}
+header h1 {
+    color: #6699FF;
+    font: normal small-caps 200 3em 'Roboto', sans-serif;
+    letter-spacing: 0.075em;
+    margin: 0 0 0 .25em;
+    text-shadow: .1em .1em 3px #FF99CC;
+    white-space: nowrap;
+}
+
+header h1 a:link,
+header h1 a:visited {
+    color: #3399FF;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+header h1 a:hover,
+header h1 a:active {
+    color: #FFCCFF;
+    text-decoration: none;
+    text-shadow: .1em .1em 3px #FFCCFF;
+}
+
+#contact {
+        float: right;
+        font-size: 2.5em;
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+#contact li {
+        display: inline;
+        margin: 0;
+        
+    }
+#contact li a:link {
+        border-radius: 11px;
+        color: #ECECEC;
+        text-shadow: .05em .05em 1px #FF00FF;
+        padding: 0 8px;
+        margin:  5px 0 0 5px;
+        height: 50px;
+        float: left;
+        transition: all 0.2s ease;
+    }
+#contact li a:visited {
+        color: #ECECEC;
+    }
+
+#contact li a:hover {
+        text-decoration: none;
+        text-shadow: .15em .15em 1px #0000FF;
+        margin: 0 5px 5px 0;
+    }
+/*.navbar {
+    background-color: blue;
+    background-image: none;
+}*/
+
+/* Home Tag*/
+
+#Homepage h2{
+    color: #FAFFFF;
+    font: normal 400 2.2em 'Ubuntu Mono', monospace;
+    position: relative;
+    text-align: left;
+    padding: 0 0 0 0;
+    text-shadow: .1em .1em 3px #00CCFF;
+    text-decoration: none;
+    margin: 0 0 0 0;
+}
+#Homepage h2[descr]:hover::after {
+    background-color: rgba(75, 110, 219, 0.14);
+    border: 1px #AAA solid;
+    border-radius: .375em;
+    color: #585858;
+    content: attr(descr);
+    font-size: .55em;
+    left: 0;
+    top: -1.75em;
+    min-width: 200px;
+    padding: .25em;
+    position: absolute;
+    z-index: 1;
+    text-shadow: none;
+}
+#Homepage h2 a:link,
+#Homepage h2 a:active,
+#Homepage h2 a:visited,
+#Homepage h2 a:hover {
+    color: #FAFFFF;
+    text-decoration: none;
+}
+/*Project Summary*/
+.project-summary {
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    cursor: hand;
+    cursor: pointer;
+    clear: both;
+    margin: 1em 0 0 0; 
+    min-height: 15.375em;
+    padding: .5em;
+    transition: all .5s linear;
+}
+
+.project-summary:hover {
+    background: #000066;
+    border: 1px solid #777;
+}
+
+.project-summary h3 {
+    color: #FAFFFF;
+    margin: 0 0 1em 0.5em;
+}
+
+.project-summary p {
+    color: #FAFFFF;
+    margin: 0 0 1em 0.5em;
+}
+
+.project-summary #myCarousel1,
+.project-summary #myCarousel2,
+.project-summary #myCarousel3{
+    border: 1px solid #CCC;
+    float: right;
+    margin: .25em 0 0 .25em;
+    padding: .125em;
+}
+
+.project-summary #cardgame{
+    border: 1px solid #CCC;
+    float: right;
+    margin: .25em 0 0 .25em;
+    padding: .125em;
+}
+.project-summary .tools {
+    background: #F7F7F8;
+    border: 1px solid #D8D7E6;
+    border-radius: 3px;
+    color: #8D81E0;
+    font-size: .75em;
+    margin: 0 -1px 0 0;
+    padding: 1px 4px;
+}
+.carousel-caption h3{
+  color: #FFC966;
+}
+
+/*Resume Tag*/
+
+#Resumepage {
+    font: normal 400 1em 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 50em; /* prevent resume from getting too wide */
+}
+
+#Resumepage .resumepage-submenu {
+    font: normal 400 1em 'Ubuntu Mono', monospace;
+    padding: 0.5em 0.5em 2em 0.5em;
+    text-align: right;
+}
+
+#resume-content{
+    padding: 0 0 0 1.5em;
+    border-style: solid;
+    border-color: #FAFFFF;
+}
+
+#resume-content h1 {
+    font: normal small-caps 200 3em 'Roboto', sans-serif;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+#resume-content h3 {
+    border-top: 1px solid #ddd;
+    margin: 1em 0 0 0;
+    font: normal 700 1.2em 'Habibi', serif;
+    padding: .3em 0 0 0;
+}
+
+#resume-content strong {
+    float: right;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400; /*blasphemy!*/
+    margin: -1.25em 2em 0 0
+}
+
+#resume-content em {
+    font-size: .9em;
+}
+#resume-content h1,h3,p,li,em{
+  color: #FAFFFF;
+}
+#resume-content h2{
+    color: #6699FF;
+    font: normal 400 1.5em 'Ubuntu Mono', monospace;
+    position: relative;
+    text-align: left;
+}
