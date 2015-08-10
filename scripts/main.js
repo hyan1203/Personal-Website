@@ -15,18 +15,24 @@ function displayResume() {
     }
 }
 
-
+var score = null;
 $(document).ready(function() {
     // Display first page.
-    
+
     $('section').hide().filter(':first').show();
 
-    
+
     // Show standard resume.
     displayResume();
 
     /** Click Handlers - because clicks must be handled. **/
-    
+
+    /*Show the rose number*/
+    var posting = $.post('php/rose.php', 'case=getscore');
+    posting.success(function(data) {
+                score=data;
+                $('.rosescore').html("Score: "+score);
+    });
     // Updates address bar hash when tab is clicked on.
     $('.navbar-nav li').click(function() {
         $(".navbar-nav li").filter(".active").removeClass("active");
@@ -35,4 +41,27 @@ $(document).ready(function() {
         $('section').hide().filter(id).show();
     })
 
+    $('.rose').draggable({
+      stack: '.card'
+    });
+    $('.basket').droppable({
+      accept:'.rose',
+      greedy:true,
+      hoverClass:'baskethighlight',
+      tolerance:'pointer',
+      drop: function(event, ui){
+            var drop = $(this);
+            var drag = $(ui.helper);
+            var dropoffset = drop.offset();
+            var dragoffset = drag.offset();
+            drag.draggable('disable');
+            var posting = $.post('php/rose.php','case=addscore');
+            /*Change the rose number*/
+            var posting = $.post('php/rose.php', 'case=getscore');
+            posting.success(function(data) {
+                        score=data;
+                        $('.rosescore').html("Score: "+score);
+            });
+      }
+    });
 });

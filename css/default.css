@@ -49,16 +49,16 @@ Google WebFont's imports
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
   MIT License: https://github.com/driftyco/ionicons
-  
+
   This is a subset of Ionicons, only uses what is needed.
 */
 @font-face {
     font-family: "Ionicons";
     src: url("../fonts/ionicons.eot?v=1.4.1");
-    src: url("../fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"), 
-         url("../fonts/ionicons.ttf?v=1.4.1") format("truetype"), 
-         url("../fonts/ionicons.woff?v=1.4.1") format("woff"), 
-         url("../fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg"); font-weight: normal; font-style: normal; 
+    src: url("../fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"),
+         url("../fonts/ionicons.ttf?v=1.4.1") format("truetype"),
+         url("../fonts/ionicons.woff?v=1.4.1") format("woff"),
+         url("../fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg"); font-weight: normal; font-style: normal;
 }
 
 [class*="ion-"] {
@@ -90,7 +90,7 @@ Google WebFont's imports
 .ion-android-book:before { content: "\f2d0"; }
 
 
-/* 
+/*
 Responsive Design Reasoning
 more at: http://blog.geekwagon.net/linktothepostaboutresponsivestuffIhaven'tmadeyet
 
@@ -98,7 +98,7 @@ break points
 300px - mobile devices are usually 1080px width / device pixel ratio of 3 = 360, anyone perusing the web at less than 300px, I'm not worried about you.
 625px - Chrome using half of a 4:3 screen at a resolution 1280x1024.
 944px - Chrome using half of a 16:9 screen at a resolution 1920x1800.
-    
+
 */
 
 
@@ -163,7 +163,7 @@ header h1 a:active {
 #contact li {
         display: inline;
         margin: 0;
-        
+
     }
 #contact li a:link {
         border-radius: 11px;
@@ -230,7 +230,7 @@ header h1 a:active {
     cursor: hand;
     cursor: pointer;
     clear: both;
-    margin: 1em 0 0 0; 
+    margin: 1em 0 0 0;
     min-height: 15.375em;
     padding: .5em;
     transition: all .5s linear;
@@ -330,4 +330,31 @@ header h1 a:active {
     font: normal 400 1.5em 'Ubuntu Mono', monospace;
     position: relative;
     text-align: left;
+}
+
+/*Comments Tag*/
+.comments .rose img{
+  margin: 2em 0 0 1em;
+}
+.baskethighlight{
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(231,166,26,0.77);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(231,166,26,0.77);
+    box-shadow: 0px 0px 20px 2px rgba(231,166,26,0.77);
+}
+#Commentspage .rosescore{
+  color: #6699FF;
+  font: normal 400 1.5em 'Ubuntu Mono', monospace;
+}
+#Commentspage #aboutme h2{
+  color: #FAFFFF;
+  font: normal 400 2.2em 'Ubuntu Mono', monospace;
+  position: relative;
+  text-align: left;
+  padding: 0 0 0 0;
+  text-shadow: .1em .1em 3px #00CCFF;
+  text-decoration: none;
+  margin: 0 0 1em 0;
+}
+#Commentspage #aboutme p{
+  color: #ECECEC;
 }
