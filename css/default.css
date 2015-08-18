@@ -1,106 +1,6 @@
 @import url(bootstrap.min.css);
 @import url(bootstrap-theme.min.css);
-/*
-Google WebFont's imports
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
-@import url(http://fonts.googleapis.com/css?family=Habibi);
-@import url(http://fonts.googleapis.com/css?family=Roboto:100);
-*/
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/OpenSans-Italic.woff) format('woff');
-}
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(../fonts/UbuntuMono-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: 'Habibi';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Habibi'), local('Habibi-Regular'), url(../fonts/Habibi-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Roboto Thin'), local('Roboto-Thin'), url(../fonts/Roboto-Thin.woff) format('woff');
-}
-
-/*!
-  Ionicons, v1.4.1
-  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
-  https://twitter.com/benjsperry  https://twitter.com/ionicframework
-  MIT License: https://github.com/driftyco/ionicons
-
-  This is a subset of Ionicons, only uses what is needed.
-*/
-@font-face {
-    font-family: "Ionicons";
-    src: url("../fonts/ionicons.eot?v=1.4.1");
-    src: url("../fonts/ionicons.eot?v=1.4.1#iefix") format("embedded-opentype"),
-         url("../fonts/ionicons.ttf?v=1.4.1") format("truetype"),
-         url("../fonts/ionicons.woff?v=1.4.1") format("woff"),
-         url("../fonts/ionicons.svg?v=1.4.1#Ionicons") format("svg"); font-weight: normal; font-style: normal;
-}
-
-[class*="ion-"] {
-    font-family: 'Ionicons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-/* used in header contact */
-.ion-ios7-email-outline:before { content: "\f186"; }
-.ion-social-facebook-outline:before { content: "\f230"; }
-.ion-social-github-outline:before { content: "\f232"; }
-.ion-social-googleplus-outline:before { content: "\f234"; }
-.ion-social-linkedin-outline:before { content: "\f238"; }
-.ion-social-rss-outline:before { content: "\f23c"; }
-
-/* used in activity table*/
-.ion-social-github:before { content: "\f233"; }
-.ion-social-rss:before { content: "\f23d"; }
-
-/* used on resume */
-.ion-chatbubble-working:before { content: "\f11d"; }
-.ion-document-text:before { content: "\f12e"; }
-.ion-android-book:before { content: "\f2d0"; }
-
-
-/*
-Responsive Design Reasoning
-more at: http://blog.geekwagon.net/linktothepostaboutresponsivestuffIhaven'tmadeyet
-
-break points
-300px - mobile devices are usually 1080px width / device pixel ratio of 3 = 360, anyone perusing the web at less than 300px, I'm not worried about you.
-625px - Chrome using half of a 4:3 screen at a resolution 1280x1024.
-944px - Chrome using half of a 16:9 screen at a resolution 1920x1800.
-
-*/
-
+@import url(fonts.css);
 
 /** Global **/
 html {
@@ -108,8 +8,11 @@ html {
     overflow-y: scroll;
 }
 body{
-    background: url("../images/rainbowsky.png") fixed;
+    background: url("../images/rainbowsky.jpg") no-repeat center center fixed;
     background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #wrap {

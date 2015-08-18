@@ -1,0 +1,120 @@
+
+/* http://www.linuxlibertine.org/index.php?id=91&L=1 */
+@font-face {
+    font-family: 'LinuxLibertine';
+    src: url('../fonts/LinuxLibertine/woff/LinLibertine_R.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinLibertine_Rah.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LinuxLibertine';
+    src: url('../fonts/LinuxLibertine/woff/LinLibertine_RB.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinLibertine_RBah.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'LinuxLibertine';
+    src: url('../fonts/LinuxLibertine/woff/LinLibertine_RI.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinLibertine_RIah.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LinuxLibertine';
+    src: url('../fonts/LinuxLibertine/woff/LinLibertine_RBI.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinLibertine_RBIah.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'LinuxLibertineMonospace';
+    src: url('../fonts/LinuxLibertine/woff/LinLibertine_M.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinLibertine_Mah.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LinBiolinum';
+    src: url('../fonts/LinuxLibertine/woff/LinBiolinum_R.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinBiolinum_Rah.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LinBiolinum';
+    src: url('../fonts/LinuxLibertine/woff/LinBiolinum_RB.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinBiolinum_RBah.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'LinBiolinum';
+    src: url('../fonts/LinuxLibertine/woff/LinBiolinum_RI.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinBiolinum_RIah.ttf') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LinBiolinum';
+    src: url('../fonts/LinuxLibertine/woff/LinBiolinum_RBI.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinBiolinum_RBIah.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'LinBiolinumKeyboard';
+    src: url('../fonts/LinuxLibertine/woff/LinBiolinum_K.woff') format('woff'),
+         url('../fonts/LinuxLibertine/ttf/LinBiolinum_Kah.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(../fonts/OpenSans-Semibold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/OpenSans-Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(../fonts/UbuntuMono-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Habibi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Habibi'), local('Habibi-Regular'), url(../fonts/Habibi-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(../fonts/Roboto-Thin.woff) format('woff');
+}
